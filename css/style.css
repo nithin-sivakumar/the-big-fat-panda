@@ -15,7 +15,6 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     height: 100%;
     width: 100%;
-    cursor: none;
 }
 
 nav {
@@ -36,7 +35,7 @@ nav img {
     width: 180px;
     height: 90px;
     filter: grayscale(80%);
-    cursor: none;
+    cursor: pointer;
 }
 
 nav img:hover {
@@ -58,7 +57,7 @@ nav img:hover {
     padding: 10px;
     text-transform: uppercase;
     border: 1px solid transparent;
-    cursor: none;
+    cursor: pointer;
 }
 
 .link:hover {
@@ -158,7 +157,57 @@ main {
     background-color: #000;
 }
 
+.scrolling-info {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
 .scroller {
     color: #fff;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.scroller h4 {
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 100px;
+    margin-right: 10px;
+    -webkit-text-stroke: 1px red;
+    color: transparent;
+    cursor: pointer;
+    transition: all linear 0.5s;
+    font-family: 'Macondo', cursive;
+}
+
+.scroller h4:hover {
+    color: red;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
