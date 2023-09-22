@@ -68,6 +68,7 @@ video {
     height: 100%;
     object-fit: cover;
     position: fixed;
+    z-index: -1;
 }
 
 main {
@@ -78,4 +79,57 @@ main {
 .hero {
     height: 100vh;
     width: 100%;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+}
+
+.hero-title::before {
+    content: "EAT. DRINK. SLEEP.";
+    position: absolute;
+    color: #000;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 2px gold;
+    z-index: -1;
+}
+
+.hero-title::selection {
+    color: red;
+    background-color: gold;
+}
+
+.hero-subtitle {
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle::selection {
+    color: red;
+    background-color: gold;
+}
+
+
+.hero-intro {
+    text-transform: none;
+    width: 60%;
+    font-size: 20px;
+}
+
+.hero-intro::selection {
+    color: #fff;
+    background-color: #000;
 }
