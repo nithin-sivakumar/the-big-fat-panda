@@ -65,6 +65,31 @@ nav img:hover {
     border-radius: 10px;
 }
 
+.arrow {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: -2%;
+    bottom: -2%;
+    border: 3px solid red;
+}
+
+.arrow:hover {
+    scale: 0.4;
+    background-color: red;
+    transition: all 0.5s ease;
+}
+
+.arrow i {
+    font-size: 70px;
+    font-weight: 100;
+}
+
 .cursor {
     height: 20px;
     width: 20px;
@@ -96,6 +121,7 @@ video {
     z-index: -1;
 }
 
+/* Main */
 main {
     position: relative;
     background-color: rgba(0, 0, 0, 0.45);
@@ -503,7 +529,7 @@ main {
     background-color: black;
     color: #fff;
     border: 2px solid #fff;
-    transition: all ease 0.2s;
+    transition: all ease 0.03s;
 }
 
 .banner-link:active {
@@ -567,4 +593,10 @@ main {
 #quote-end {
     bottom: -1%;
     right: 2%;
+}
+
+footer {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, rgba(116, 0, 0, 0.863), red);
 }
