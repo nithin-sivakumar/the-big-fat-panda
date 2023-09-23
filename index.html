@@ -31,7 +31,7 @@
     <div class="cursor-blur"></div>
     <video autoplay loop muted src="./mov/videoplayback.webm"></video>
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <h1 class="hero-title">Eat. Drink. Sleep.</h1>
         <h2 class="hero-subtitle">
           Where Legends Are Born and Noodles Are Eaten
@@ -41,9 +41,11 @@
           Join Po the Panda and his kung fu friends on epic adventures filled
           with humor, heart, and the art of awesomeness!
         </p>
-        <div class="arrow">
-          <i class="ri-arrow-down-line"></i>
-        </div>
+        <a class="arrow-frame-link" href="#quote">
+          <div class="arrow">
+            <i class="ri-arrow-down-line"></i>
+          </div>
+        </a>
       </section>
       <section class="scrolling-info">
         <div class="scroller">
@@ -131,7 +133,7 @@
         </div>
         <img class="banner-img" src="./img/action-img/tigress.png" alt="" />
       </section>
-      <section class="quote-container">
+      <section id="quote" class="quote-container">
         <h4 class="quote-main">
           Your mind is like this water, my friend. When it is agitated, it
           becomes difficult to see. But if you allow it to settle, the answer
@@ -150,7 +152,25 @@
           alt=""
         />
       </section>
-      <footer></footer>
+      <footer id="footer">
+        <div class="footer-left">
+          <img class="footer-logo" src="./img/logo.png" alt="" />
+        </div>
+        <div class="footer-right">
+          <h4 class="footer-text">Thank you for visiting!</h4>
+          <h4 class="footer-text">
+            Made with love by
+            <a class="footer-link" href="https://github.com/nithin-sivakumar"
+              ><strong>Nithin Sivakumar</strong></a
+            >
+          </h4>
+        </div>
+        <a class="footer-arrow-frame-link" href="#hero">
+          <div class="footer-arrow">
+            <i class="ri-arrow-up-line"></i>
+          </div>
+        </a>
+      </footer>
     </main>
 
     <script

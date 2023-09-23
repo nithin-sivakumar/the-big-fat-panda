@@ -90,6 +90,11 @@ nav img:hover {
     font-weight: 100;
 }
 
+.arrow-frame-link {
+    text-decoration: none;
+    color: #fff;
+}
+
 .cursor {
     height: 20px;
     width: 20px;
@@ -596,7 +601,84 @@ main {
 }
 
 footer {
-    height: 40vh;
+    height: 20vh;
     width: 100%;
-    background: linear-gradient(to left bottom, rgba(116, 0, 0, 0.863), red);
+    background: linear-gradient(to left bottom, rgba(116, 0, 0, 0.863) 0%, red 80%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 100px;
+    overflow: hidden;
+}
+
+.footer-logo {
+    aspect-ratio: 1;
+    width: 180px;
+    height: 90px;
+    filter: grayscale(80%);
+    cursor: pointer;
+}
+
+.footer-logo:hover {
+    filter: grayscale(0%);
+    transition: filter 0.3s ease;
+}
+
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin: 10px;
+}
+
+.footer-text::selection {
+    color: #000;
+    background-color: red;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.footer-link::selection, .footer-link strong::selection {
+    color: #000;
+    background-color: red;
+}
+
+.footer-arrow {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    right: -2%;
+    bottom: -2%;
+    border: 3px solid #fff;
+}
+
+.footer-arrow:hover {
+    scale: 0.4;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.footer-arrow i {
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.footer-arrow-frame-link {
+    text-decoration: none;
+    color: #fff;
 }
